@@ -1,0 +1,36 @@
+{
+  "zenkaiRequirements": {
+    "stars": 7,
+    "zPowerRequirements": 3000,
+    "awakeningLevels": [
+      {
+        "level": "I",
+        "AwakeningzPower": 1000
+      },
+      {
+        "level": "II",
+        "AwakeningzPower": 2000
+      },
+      {
+        "level": "III",
+        "AwakeningzPower": 3000
+      },
+      {
+        "level": "IV",
+        "AwakeningzPower": 4000
+      },
+      {
+        "level": "V",
+        "AwakeningzPower": 5000
+      },
+      {
+        "level": "VI",
+        "AwakeningzPower": 6000
+      },
+      {
+        "level": "VII",
+        "AwakeningzPower": 7000
+      }
+    ]
+  }
+}
