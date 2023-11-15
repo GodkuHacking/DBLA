@@ -1,39 +1,55 @@
 {
   "zenkaiAwakenableCharacters": {
-    "legendsLimited": [
-      "LEGENDS LIMITED Jiren: Full Power",
-      "LEGENDS LIMITED Super Saiyan Trunks (Adult)",
-      "LEGENDS LIMITED Super Saiyan God SS Evolved Vegeta",
-      "LEGENDS LIMITED Final Form Frieza",
-      "LEGENDS LIMITED Super Saiyan 4 Goku",
-      "LEGENDS LIMITED Super Saiyan Rosè Goku Black",
-      "LEGENDS LIMITED Ultra Instinct -Sign- Goku",
-      "LEGENDS LIMITED Vegeta (Majin)",
-      "LEGENDS LIMITED Super Saiyan God SS Vegito",
-      "LEGENDS LIMITED 1rst form Frieza",
-      "LEGENDS LIMITED Piccolo",
-      "LEGENDS LIMITED Super Vegito",
-      "LEGENDS LIMITED Goku (SSJ)",
-      "LEGENDS LIMITED Super Saiyan 3 Goku",
-      "LEGENDS LIMITED Goten",
-      "LEGENDS LIMITED Super Saiyan 2 Gohan (Youth)",
-      "LEGENDS LIMITED Beerus",
-      "LEGENDS LIMITED Super Saiyan God SS Vegeta"
-    ],
-    "sparking": [
-      "Trunks: Mai (Assist)",
-      "Jiren",
-      "Bergamo",
-      "Android #21 (Evil)",
-      "Super Saiyan 2 Kefla",
-      "Super Gogeta",
-      "Super Janemba (RED)",
-      "Super Janemba (PUR)",
-      "Super Saiyan Gohan",
-      "Goku",
-      "Super #17",
-      "Chi-Chi",
-      "Kaioken Goku"
-    ]
+    "legendsLimited": {
+      "characters": [
+        "LEGENDS LIMITED Jiren: Full Power",
+        "LEGENDS LIMITED Super Saiyan Trunks (Adult)",
+        "LEGENDS LIMITED Super Saiyan God SS Evolved Vegeta",
+        "LEGENDS LIMITED Final Form Frieza",
+        "LEGENDS LIMITED Super Saiyan 4 Goku",
+        "LEGENDS LIMITED Super Saiyan Rosè Goku Black",
+        "LEGENDS LIMITED Ultra Instinct -Sign- Goku",
+        "LEGENDS LIMITED Vegeta (Majin)",
+        "LEGENDS LIMITED Super Saiyan God SS Vegito",
+        "LEGENDS LIMITED 1rst form Frieza",
+        "LEGENDS LIMITED Piccolo",
+        "LEGENDS LIMITED Super Vegito",
+        "LEGENDS LIMITED Goku (SSJ)",
+        "LEGENDS LIMITED Super Saiyan 3 Goku",
+        "LEGENDS LIMITED Goten",
+        "LEGENDS LIMITED Super Saiyan 2 Gohan (Youth)",
+        "LEGENDS LIMITED Beerus",
+        "LEGENDS LIMITED Super Saiyan God SS Vegeta"
+      ]
+    },
+    "sparking": {
+      "characters": [
+        "Trunks: Mai (Assist)",
+        "Jiren",
+        "Bergamo",
+        "Android #21 (Evil)",
+        "Super Saiyan 2 Kefla",
+        "Super Gogeta",
+        "Super Janemba (RED)",
+        "Super Janemba (PUR)",
+        "Gohan",
+        "Goku",
+        "Super #17",
+        "Chi-Chi",
+        "Kaioken Goku",
+        "Great Saiyaman 1 & 2 (Assist)",
+        "Super Full Power Saiyan 4 Goku",
+        "Fusion Zamasu",
+        "Kakarot Goku",
+        "Goku",
+        "Gotenks",
+        "Super Saiyan 3 Gotenks",
+        "Super Saiyan 2 Caulifla",
+        "Trunks (Youth)",
+        "Super Gogeta (RED)",
+        "Vegito",
+        "Super Saiyan Goku"
+      ]
+    }
   }
 }
