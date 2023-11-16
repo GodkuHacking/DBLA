@@ -25,3 +25,6 @@ Explore more about Dragon Ball Legends, join discussions, and stay updated with 
 ## About the Author
 
 This project is maintained by ^mind-set#0001. If you have any questions, suggestions, or would like to contribute, feel free to reach out!
+
+## Made with:
+* [![Next][Next.js]][Next-url] - Coming soon have not used this yet but it will be.
