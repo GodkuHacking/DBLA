@@ -4,7 +4,6 @@
 [![Forks](https://img.shields.io/github/forks/mindsetpro/DBLA)](https://github.com/mindsetpro/DBLA/network/members)
 [![Stargazers](https://img.shields.io/github/stars/mindsetpro/DBLA)](https://github.com/mindsetpro/DBLA/stargazers)
 [![Issues](https://img.shields.io/github/issues/mindsetpro/DBLA)](https://github.com/mindsetpro/DBLA/issues)
-[![MIT License](https://img.shields.io/github/license/mindsetpro/DBLA)](https://github.com/mindsetpro/DBLA/blob/main/LICENSE)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-^mind--set-blue)](https://www.linkedin.com/in/mind-set)
 
 
