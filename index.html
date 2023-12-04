@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DB Legends API</title>
+  <link rel="icon" type="image/png" href="https://private-user-images.githubusercontent.com/138173273/283228705-9e7b01bf-b9d9-4374-b040-8dc3028e04bb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE2OTgxNDAsIm5iZiI6MTcwMTY5Nzg0MCwicGF0aCI6Ii8xMzgxNzMyNzMvMjgzMjI4NzA1LTllN2IwMWJmLWI5ZDktNDM3NC1iMDQwLThkYzMwMjhlMDRiYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNFQxMzUwNDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mOGMzMmEwNjMzY2M0ZWVjNDJkOGQ5OGU4ZDkzOWMxM2VhOGNiZDQ5MGQ0YjczMDEwMjU5MGRhOTg3NWVjMDNkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.RoIItV5brhAl9gbo9U-naj3gwb13_MfSgn4YIsP8odM">
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      padding: 1em;
+      text-align: center;
+    }
+
+    main {
+      padding: 2em;
+    }
+
+    input[type="text"] {
+      padding: 0.5em;
+      font-size: 1em;
+    }
+
+    #searchResults {
+      margin-top: 1em;
+    }
+
+    .characterList {
+      list-style: none;
+      padding: 0;
+    }
+
+    .characterList li {
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>DB Legends API</h1>
+  </header>
+
+  <main>
+    <h2>Zenkai Awakenable Characters</h2>
+    <label for="search">Search:</label>
+    <input type="text" id="search" placeholder="Enter character name..." oninput="searchCharacters()">
+    <div id="searchResults">
+      <!-- Search results will be displayed here -->
+    </div>
+
+    <h3>API Endpoints</h3>
+    <ul>
+      <li><a href="data/zenkai/zenkai_charas.json">data/zenkai/zenkai_charas.json</a></li>
+    </ul>
+
+    <h3>Zenkai Awakenable Characters</h3>
+    <div>
+      <h4>Legends Limited</h4>
+      <ul class="characterList" id="legendsLimitedList">
+        <!-- List of Legends Limited characters will be dynamically populated here -->
+      </ul>
+    </div>
+
+    <div>
+      <h4>Sparking</h4>
+      <ul class="characterList" id="sparkingList">
+        <!-- List of Sparking characters will be dynamically populated here -->
+      </ul>
+    </div>
+
+    <div>
+      <h4>Extreme</h4>
+      <ul class="characterList" id="extremeList">
+        <!-- List of Extreme characters will be dynamically populated here -->
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    const characters = {
+  {
+  "zenkaiAwakenableCharacters": {
+    "legendsLimited": {
+      "characters": [
+        "LEGENDS LIMITED Jiren: Full Power",
+        "LEGENDS LIMITED Super Saiyan Trunks (Adult)",
+        "LEGENDS LIMITED Super Saiyan God SS Evolved Vegeta",
+        "LEGENDS LIMITED Final Form Frieza",
+        "LEGENDS LIMITED Super Saiyan 4 Goku",
+        "LEGENDS LIMITED Super Saiyan Rosè Goku Black",
+        "LEGENDS LIMITED Ultra Instinct -Sign- Goku",
+        "LEGENDS LIMITED Vegeta (Majin)",
+        "LEGENDS LIMITED Super Saiyan God SS Vegito",
+        "LEGENDS LIMITED 1rst form Frieza",
+        "LEGENDS LIMITED Piccolo",
+        "LEGENDS LIMITED Super Vegito",
+        "LEGENDS LIMITED Goku (SSJ)",
+        "LEGENDS LIMITED Super Saiyan 3 Goku",
+        "LEGENDS LIMITED Goten",
+        "LEGENDS LIMITED Super Saiyan 2 Gohan (Youth)",
+        "LEGENDS LIMITED Beerus",
+        "LEGENDS LIMITED Super Saiyan God SS Vegeta"
+      ]
+    },
+    "sparking": {
+      "characters": [
+        "Trunks: Mai (Assist)",
+        "Jiren",
+        "Bergamo",
+        "Android #21 (Evil)",
+        "Super Saiyan 2 Kefla",
+        "Super Gogeta",
+        "Super Janemba (RED)",
+        "Super Janemba (PUR)",
+        "Gohan",
+        "Goku",
+        "Super #17",
+        "Chi-Chi",
+        "Kaioken Goku",
+        "Great Saiyaman 1 & 2 (Assist)",
+        "Super Full Power Saiyan 4 Goku",
+        "Fusion Zamasu",
+        "Kakarot Goku",
+        "Goku",
+        "Gotenks",
+        "Super Saiyan 3 Gotenks",
+        "Super Saiyan 2 Caulifla",
+        "Trunks (Youth)",
+        "Super Gogeta (RED)",
+        "Vegito",
+        "Super Saiyan Goku",
+        "Goku",
+        "G.O.D Toppo",
+        "Metal Cooler",
+        "Chi-Chi",
+        "Bulma (Youth)",
+        "Goku (Youth)",
+        "Vegito",
+        "Goku Black",
+        "Goku (Kaiken Goku Transform)",
+        "Final Form Frieza",
+        "Goku",
+        "Super Saiyan goku",
+        "Piccolo",
+        "Pan",
+        "Android 16"
+      ]
+    },
+    "extreme": {
+      "characters": [
+        "Krillin",
+        "Captain Ginyu",
+        "Beerus",
+        "Majin Buu: Pure Evil",
+        "Gohan",
+        "Vegeta",
+        "2nd Form Cell",
+        "Raditz",
+        "Android #17",
+        "Android #18",
+        "1st Form Cell",
+        "1st Form Frieza",
+        "Nappa"
+      ]
+    }
+  }
+};
+
+    function searchCharacters() {
+      const searchInput = document.getElementById("search").value.toLowerCase();
+
+      const legendsLimitedList = document.getElementById("legendsLimitedList");
+      const sparkingList = document.getElementById("sparkingList");
+      const extremeList = document.getElementById("extremeList");
+
+      legendsLimitedList.innerHTML = "";
+      sparkingList.innerHTML = "";
+      extremeList.innerHTML = "";
+
+      Object.keys(characters.zenkaiAwakenableCharacters).forEach((category) => {
+        characters.zenkaiAwakenableCharacters[category].characters.forEach((character) => {
+          if (character.toLowerCase().includes(searchInput)) {
+            const listItem = document.createElement("li");
+            listItem.textContent = character;
+            if (category === "legendsLimited") {
+              legendsLimitedList.appendChild(listItem);
+            } else if (category === "sparking") {
+              sparkingList.appendChild(listItem);
+            } else if (category === "extreme") {
+              extremeList.appendChild(listItem);
+            }
+          }
+        });
+      });
+    }
+  </script>
+</body>
+
+</html>
